@@ -13,4 +13,7 @@ test
 
 ## Local Store
 
-## pip/pip3
+## Other Things
+
+### pip/pip3
+pip/pip3 may require the cert chain.
