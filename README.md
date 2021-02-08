@@ -29,6 +29,8 @@ awk -v cmd='openssl x509 -noout -subject' '
 ### Chrome and Electron
 
 ```
+certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n <certificate nickname> \
+-i <certificate filename>
 ```
 
 ### Firefox
