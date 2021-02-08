@@ -7,7 +7,13 @@ This is an attempt to document how to get things in Linux (specifically Ubuntu) 
 `
 test
 `
+## Operating Systems
 
+### Ubuntu
+
+### Redhat
+1. Place the pem in /etc/pki/ca-trust/source/anchors
+2. run update-ca-trust
 ## Chrome and Electron
 
 ``
