@@ -10,7 +10,9 @@ test
 ## Operating Systems
 
 ### Ubuntu
-
+1. Place the pem in /usr/local/share/ca-certificates/
+   1. NOTE: can be placed in a sub-directory for cleanliness 
+2. run update-ca-certificates
 ### Redhat
 1. Place the pem in /etc/pki/ca-trust/source/anchors
 2. run update-ca-trust
