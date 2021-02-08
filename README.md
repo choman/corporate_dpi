@@ -5,7 +5,8 @@ This is an attempt to document how to get things in Linux (specifically Ubuntu) 
 ## View certs
 
 `
-test
+awk -v cmd='openssl x509 -noout -subject' '
+    /BEGIN/{close(cmd)};{print | cmd}' < /etc/ssl/certs/ca-certificates.crt
 `
 ## Operating Systems
 
