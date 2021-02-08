@@ -9,7 +9,6 @@ This is an attempt to document how to get things in Linux (specifically Ubuntu) 
 awk -v cmd='openssl x509 -noout -subject' '
     /BEGIN/{close(cmd)};{print | cmd}' < /etc/ssl/certs/ca-certificates.crt
 ```
-
 ### Redhat
 ```
 awk -v cmd='openssl x509 -noout -subject' '
@@ -24,15 +23,19 @@ awk -v cmd='openssl x509 -noout -subject' '
 ### Redhat
 1. Place the pem in /etc/pki/ca-trust/source/anchors
 2. run update-ca-trust
-## Chrome and Electron
 
-``
+## Applications
 
-## Firefox
+### Chrome and Electron
 
-## Local Store
+```
+```
 
-## Other Things
+### Firefox
+
+### Local Store
+
+### Other Things
 
 ### pip/pip3
 
