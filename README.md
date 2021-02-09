@@ -42,3 +42,16 @@ certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n <certificate nickname> \
 ### pip/pip3
 
 pip/pip3 may require the cert chain.
+
+### vagrant
+
+#### Ubuntu 
+
+For this to work use the deb file from linux. After install, cp the 
+cacert.pem to a backup file and replace it with the system store version
+
+```
+cd /opt/vagrant/embedded
+sudo cp -p cacert.pem cacert.pem.BAK
+sudo cp /etc/ssl/certs/ca-certificates.crt cacert.pem
+```
