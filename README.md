@@ -41,7 +41,16 @@ certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n <certificate nickname> \
 
 ### pip/pip3
 
-pip/pip3 may require the cert chain.
+One needs to modify the pip.conf to contain the following
+
+```
+[global]
+cert = /etc/ssl/certs/ca-bundle.crt
+```
+#### RHEL/CentOS
+
+- /etc/pip.conf
+- ${HOME}/.config/pip/pip.conf
 
 ### vagrant
 
