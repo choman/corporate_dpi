@@ -45,12 +45,14 @@ One needs to modify the pip.conf to contain the following
 
 ```
 [global]
-cert = /etc/ssl/certs/ca-bundle.crt
+cert = <path_to_cert_bundle_file>
 ```
 #### RHEL/CentOS
 
-- /etc/pip.conf
-- ${HOME}/.config/pip/pip.conf
+- certfile: cert = /etc/ssl/certs/ca-bundle.crt
+- pip.conf
+  - /etc/pip.conf
+  - ${HOME}/.config/pip/pip.conf
 
 ### vagrant
 
