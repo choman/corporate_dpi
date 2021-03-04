@@ -1,6 +1,7 @@
 # Abstract
 
-This is an attempt to document how to get things in Linux (specifically Ubuntu) to work behind a corporate proxy where MITM may be required.
+This is an attempt to document how to get things in Linux (specifically Ubuntu)
+to work behind a corporate DPI/proxy where MITM may be required.
 
 ## View certs
 
