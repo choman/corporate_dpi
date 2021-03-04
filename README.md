@@ -42,7 +42,7 @@ certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n <certificate nickname> \
 
 ### Ubuntu ppas
 
-The ppa process on Ubuuntu uses the httplib2 library. This module appears to use
+The ppa process on Ubuntu uses the httplib2 library. This module appears to use
 the cacert.pen bundled under/usr/lib/python3/dist-packages/certifi/cacert.pem
 
 copy /etc/ssl/certs/ca-certificates.crt to this file
@@ -69,7 +69,7 @@ cert = <path_to_cert_bundle_file>
 
 #### Ubuntu 
 
-For this to work use the deb file from linux. After install, cp the 
+For this to work use the deb file from Linux. After install, cp the 
 cacert.pem to a backup file and replace it with the system store version
 
 ```
