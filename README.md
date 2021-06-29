@@ -40,7 +40,7 @@ certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n <certificate nickname> \
 
 ### Other Things
 
-### Ubuntu ppas
+#### Ubuntu ppas
 
 The ppa process on Ubuntu uses the httplib2 library. This module appears to use
 the cacert.pen bundled under/usr/lib/python3/dist-packages/certifi/cacert.pem
@@ -50,7 +50,7 @@ copy /etc/ssl/certs/ca-certificates.crt to this file
 sudo cp /etc/ssl/certs/ca-certificates.crt /usr/lib/python3/dist-packages/certifi/cacert.pem
 ```
 
-### pip/pip3
+#### pip/pip3
 
 One needs to modify the pip.conf to contain the following
 
@@ -58,16 +58,16 @@ One needs to modify the pip.conf to contain the following
 [global]
 cert = <path_to_cert_bundle_file>
 ```
-#### RHEL/CentOS
+##### RHEL/CentOS
 
 - certfile: cert = /etc/ssl/certs/ca-bundle.crt
 - pip.conf
   - /etc/pip.conf
   - ${HOME}/.config/pip/pip.conf
 
-### vagrant
+#### vagrant
 
-#### Ubuntu 
+##### Ubuntu 
 
 For this to work use the deb file from Linux. After install, cp the 
 cacert.pem to a backup file and replace it with the system store version
