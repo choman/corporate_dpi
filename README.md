@@ -49,6 +49,20 @@ copy /etc/ssl/certs/ca-certificates.crt to this file
 ```bash
 sudo cp /etc/ssl/certs/ca-certificates.crt /usr/lib/python3/dist-packages/certifi/cacert.pem
 ```
+#### poetry
+
+Append certs to the cacert.pem, example locations are:
+```
+find $HOME/.poetry/lib/poetry/_vendor -name cacert.pem
+${HOME}/.poetry/lib/poetry/_vendor/py3.6/certifi/cacert.pem
+${HOME}/.poetry/lib/poetry/_vendor/py3.9/certifi/cacert.pem
+${HOME}/.poetry/lib/poetry/_vendor/py2.7/certifi/cacert.pem
+${HOME}/.poetry/lib/poetry/_vendor/py3.7/certifi/cacert.pem
+${HOME}/.poetry/lib/poetry/_vendor/py3.5/certifi/cacert.pem
+${HOME}/.poetry/lib/poetry/_vendor/py3.8/certifi/cacert.pem
+
+
+```
 
 #### pip/pip3
 
