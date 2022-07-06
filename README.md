@@ -27,6 +27,8 @@ awk -v cmd='openssl x509 -noout -subject' '
 
 ## Applications
 
+[aws-sam](applications/aws-sam.md)
+
 ### Chrome and Electron
 
 ```
