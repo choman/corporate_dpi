@@ -25,9 +25,13 @@ awk -v cmd='openssl x509 -noout -subject' '
 1. Place the pem in /etc/pki/ca-trust/source/anchors
 2. run update-ca-trust
 
+
 ## Applications
 
-[aws-sam](applications/aws-sam.md)
+- [aws-sam](applications/aws-sam.md)
+- [chrome/electron](applications/chrome-electron.md)
+- [electron/chrome](applications/chrome-electron.md)
+
 
 ### Chrome and Electron
 
