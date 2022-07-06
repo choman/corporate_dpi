@@ -44,9 +44,10 @@ certutil -d sql:$HOME/.pki/nssdb -A -t "C,," -n <certificate nickname> \
 
 ### Local Store
 
-### Other Things
+### Misc
 
 #### Ubuntu ppas
+- [Ubuntu ppas]
 
 The ppa process on Ubuntu uses the httplib2 library. This module appears to use
 the cacert.pen bundled under/usr/lib/python3/dist-packages/certifi/cacert.pem
