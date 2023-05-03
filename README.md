@@ -26,6 +26,17 @@ awk -v cmd='openssl x509 -noout -subject' '
 2. run update-ca-trust
 
 
+## Runtimes
+
+### Ubuntu
+Add to the top-level direnvrc file: ~/.config/direnv/direnvrc
+```
+# SSL CERT FILE Variables
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+export NODE_EXTRA_CA_CERTS="${SSL_CERT_FILE}"
+```
+
+
 ## Applications
 
 - [aws-sam](applications/aws-sam.md)
