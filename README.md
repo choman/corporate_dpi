@@ -10,6 +10,7 @@ to work behind a corporate DPI/proxy where MITM may be required.
 awk -v cmd='openssl x509 -noout -subject' '
     /BEGIN/{close(cmd)};{print | cmd}' < /etc/ssl/certs/ca-certificates.crt
 ```
+
 ### Redhat
 ```
 awk -v cmd='openssl x509 -noout -subject' '
@@ -18,11 +19,12 @@ awk -v cmd='openssl x509 -noout -subject' '
 ## Operating Systems
 
 ### Ubuntu
-1. Place the pem in /usr/local/share/ca-certificates/
+1. Place the pem in `/usr/local/share/ca-certificates/`
    1. NOTE: can be placed in a sub-directory for cleanliness 
 2. run update-ca-certificates
 ### Redhat
-1. Place the pem in /etc/pki/ca-trust/source/anchors
+1. Place the pem in `/etc/pki/ca-trust/source/anchors`
+   1. NOTE: **_cannot_** be placed in a sub-directory for cleanliness 
 2. run update-ca-trust
 
 
